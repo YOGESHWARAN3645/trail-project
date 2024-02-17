@@ -1,0 +1,229 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <title>homepage</title>  
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
+  <style>
+    .footer {
+        background-color: #343a40;
+        color: #ffffff;
+        padding: 50px 0;
+    }
+
+    .footer h5 {
+        color: #ffffff;
+    }
+
+    .footer p,
+    .footer ul li {
+        color: #b0b0b0;
+    }
+
+    .footer ul li a {
+        color: #b0b0b0;
+    }
+
+    .footer ul li a:hover {
+        color: #ffffff;
+    }
+
+    .footer .copyright {
+        background-color: #212529;
+        padding: 15px 0;
+    }
+
+    .footer .copyright p {
+        margin: 0;
+        text-align: center;
+        color: #b0b0b0;
+    }
+    /* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Specific section styles */
+#what-is-iiot, #how-iiot-works, #iiot-applications, #iiot-security, #resources, #contact {
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#what-is-iiot h2, #how-iiot-works h2, #iiot-applications h2, #iiot-security h2, #resources h2, #contact h2 {
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+
+  </style>
+    
+</head>  
+
+<body>  
+  
+<nav class="navbar navbar-inverse">  
+  <div class="container-fluid">  
+    <ul class="nav navbar-nav">  
+ 
+    </ul>  
+    <ul class="nav navbar-nav navbar-right">  
+      <li><a href="http://127.0.0.1:8000/contact">Contact Us</a></li> 
+      <li><a href="http://127.0.0.1:8000"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>  
+    </ul>  
+  </div>  
+</nav>  
+
+<nav class="navbar navbar-default">  
+    <div class="container-fluid">  
+      <div class="navbar-header">  
+        <a class="navbar-brand" href="http://127.0.0.1:8000/lmw">LMW</a> 
+      </div>
+      <ul class="nav navbar-nav navbar-left">   
+        <li><a href="http://127.0.0.1:8000/home/ai">AI</a></li>  
+        <li><a href="http://127.0.0.1:8000/home/cloud">Cloud</a></li>  
+        <li><a href="#">Machine Learning</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">  
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li> 
+      </ul>  
+    </div>  
+  </nav>  
+    
+<div class="container">  
+    <header>
+        <h1>Introduction to IIoT</h1>
+        <nav>
+            <ul>
+                <li><a href="#what-is-iiot">What is IIoT?</a></li>
+                <li><a href="#how-iiot-works">How IIoT Works</a></li>
+                <li><a href="#iiot-applications">IIoT Applications</a></li>
+                <li><a href="#iiot-security">IIoT Security</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="what-is-iiot">
+        <h2>What is IIoT?</h2>
+        <p>The Industrial Internet of Things (IIoT) is the use of interconnected smart devices and sensors in industrial settings to collect, analyze, and exchange data. IIoT enables automation, remote monitoring, predictive maintenance, and optimization of industrial processes.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgg0uRMhOP4WXWZ5KMXb0tYZRBZYMfKw4cvGYAibldjw&s" alt="IIoT Image 1">
+    </section>
+    
+    <section id="how-iiot-works">
+        <h2>How IIoT Works</h2>
+        <p>IIoT works by deploying sensors and devices throughout industrial environments to collect data on equipment, processes, and environmental conditions. This data is then transmitted to centralized systems where it is analyzed to gain insights and optimize operations.</p>
+        <img src="data:image/jpeg;base64,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" alt="IIoT Image 2">
+    </section>
+    
+    <section id="iiot-applications">
+        <h2>IIoT Applications</h2>
+        <p>IIoT has a wide range of applications across industries such as manufacturing, energy, transportation, and healthcare. Some common applications include predictive maintenance, asset tracking, supply chain optimization, and remote monitoring.</p>
+        <img src="data:image/jpeg;base64,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" alt="IIoT Image 3">
+    </section>
+    
+    <section id="iiot-security">
+        <h2>IIoT Security</h2>
+        <p>Ensuring security in IIoT systems is crucial to protect sensitive data and prevent cyberattacks. Security measures include data encryption, access control, authentication mechanisms, and regular security audits.</p>
+        <img src="data:image/jpeg;base64,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" alt="IIoT Image 4">
+    </section>
+    
+    <section id="resources">
+        <h2>Resources</h2>
+        <p>Explore resources to learn more about IIoT, including articles, whitepapers, online courses, and industry reports. Stay updated on the latest developments and trends in the field of Industrial Internet of Things.</p>
+        <img src="https://www.arenasolutions.com/wp-content/uploads/what-is-industrial-Internet-of-things.png" alt="IIoT Image 5">
+    </section>
+</div>  
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>A brief description of your company or website.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li>Address:SRK Vidyalaya Post,Periyanaickenpalayam,Coimbatore - 641 020 Tamil Nadu, India.</li>
+                    <li>Phone: +91 422 71922550</li>
+                    <li>Email: info@lmw.co.in</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy; 2024 Lakshmi Machine Works. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>  
+
+</html>  
+
+ 

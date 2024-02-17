@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Artificial Intelligence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Specific section styles */
+    #what-is-ai, #how-ai-works, #ai-applications, #ai-ethics, #resources, #contact {
+        background-color: #f4f4f4;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    #what-is-ai h2, #how-ai-works h2, #ai-applications h2, #ai-ethics h2, #resources h2, #contact h2 {
+        color: #333;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+</style>
+<body>
+
+<header>
+    <h1>Understanding Artificial Intelligence</h1>
+    <nav>
+        <ul>
+            <li><a href="#what-is-ai">What is AI?</a></li>
+            <li><a href="#how-ai-works">How AI Works</a></li>
+            <li><a href="#ai-applications">AI Applications</a></li>
+            <li><a href="#ai-ethics">AI Ethics</a></li>
+            <li><a href="#resources">Resources</a></li>
+          
+        </ul>
+    </nav>
+</header>
+
+<section id="what-is-ai">
+    <h2>What is AI?</h2>
+    <p>Artificial Intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems. These processes include learning, reasoning, and self-correction. Discover more about AI...</p>
+    <img src="ai_image_1.jpg" alt="AI Image 1">
+</section>
+
+<section id="how-ai-works">
+    <h2>How AI Works</h2>
+    <p>AI works by using algorithms to analyze data, learn from it, and make decisions or predictions. There are various techniques used in AI, including machine learning, neural networks, and natural language processing. Learn more about how AI works...</p>
+    <img src="ai_image_2.jpg" alt="AI Image 2">
+</section>
+
+<section id="ai-applications">
+    <h2>AI Applications</h2>
+    <p>AI has numerous applications across various industries, including healthcare, finance, transportation, and more. From diagnosing diseases to optimizing financial portfolios, AI is revolutionizing how tasks are performed. Explore some AI applications...</p>
+    <img src="ai_image_3.jpg" alt="AI Image 3">
+</section>
+
+<section id="ai-ethics">
+    <h2>AI Ethics</h2>
+    <p>As AI becomes more prevalent in society, ethical considerations become increasingly important. Issues such as bias in algorithms, data privacy, and the impact on employment need to be addressed. Dive deeper into AI ethics...</p>
+    <img src="ai_image_4.jpg" alt="AI Image 4">
+</section>
+
+<section id="resources">
+    <h2>Resources</h2>
+    <p>Explore resources to learn more about AI, including books, articles, online courses, and research organizations. Stay updated on the latest developments and trends in the field of artificial intelligence...</p>
+    <img src="ai_image_5.jpg" alt="AI Image 5">
+</section>
+
+<footer>
+    <p>&copy; 2024 Lakshmi Machine Works. All rights reserved.</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Hide all sections except the first one
+        var sections = document.querySelectorAll('section');
+        sections.forEach(function (section, index) {
+            if (index !== 0) {
+                section.style.display = 'none';
+            }
+        });
+
+        // Add click event listeners to navigation links
+        var navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                var targetId = link.getAttribute('href').slice(1);
+                sections.forEach(function (section) {
+                    if (section.getAttribute('id') === targetId) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
