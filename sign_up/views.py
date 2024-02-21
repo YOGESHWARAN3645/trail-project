@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from .models import user_details
 from django.http import HttpResponse
+from django.http import JsonResponse
 
 def registration_page(request):
     if request.method == "POST":
@@ -27,6 +28,7 @@ def login_page(request):
     return render(request,'login_page.html')
 
 def home_page(request):
+    
     return render(request,"home_page.html")
 
 def ai_page(request):
