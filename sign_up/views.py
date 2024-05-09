@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect
 from .models import user_details
 from django.http import HttpResponse
 from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_protect
 
 def registration_page(request):
     if request.method == "POST":
@@ -28,9 +29,7 @@ def login_page(request):
     return render(request,'login_page.html')
 
 def home_page(request):
-    
     return render(request,"home_page.html")
-
 def ai_page(request):
     return render(request,"ai.html")
 def cloud_page(request):
@@ -40,5 +39,6 @@ def lmw_page(request):
 def contact_page(request):
     return render(request,"contact.html")
 # Create your views here.
+
 
 

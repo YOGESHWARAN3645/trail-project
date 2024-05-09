@@ -10,5 +10,7 @@ urlpatterns = [
     path('home/cloud',views.cloud_page,name='cloud_page'),
     path('lmw/',views.lmw_page,name='lmw_page'),
     path('contact/',views.contact_page,name='contact_page'),
+
+
 ]
 
